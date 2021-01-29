@@ -1,0 +1,415 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body,
+html {
+	font-size: 15px;
+	font-family: 'Poppins', sans-serif;
+}
+
+textarea,
+input,
+a,
+button {
+	outline: none;
+	border: none;
+	font-family: inherit;
+	text-decoration: none;
+	color: inherit;
+	font-size: inherit;
+}
+
+
+button {
+	cursor: pointer;
+	width: 100%;
+	padding: 1rem;
+	border-radius: 4px;
+	color: #ddd;
+	background-color: rgb(42, 255, 113);
+	border: 1px solid #ddd;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	-ms-border-radius: 4px;
+	-o-border-radius: 4px;
+}
+
+a:hover,
+button:hover {
+	opacity: 0.5;
+}
+
+nav {
+	background-color: rgb(238, 238, 238);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.nav-wrap {
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+}
+
+.nav-wrap .nav-brand {
+	padding: 2rem;
+	text-transform: uppercase;
+}
+
+.nav-wrap .links a {
+	padding: 2em;
+	display: block;
+	border-radius: 10px;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	-ms-border-radius: 10px;
+	-o-border-radius: 10px;
+}
+
+.container {
+	padding: 1rem;
+}
+
+.container .back {
+	position: absolute;
+	top: 0;
+	left: 0;
+	margin: 1rem;
+}
+
+.content {
+	margin: auto;
+	padding: 20px;
+	background-color: #fff;
+	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
+	-ms-border-radius: 8px;
+	-o-border-radius: 8px;
+}
+
+.buttong {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 10px;
+	justify-content: start;
+}
+
+.buttong a {
+	margin: 10px;
+	padding: 10px;
+	border-radius: 10px;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	-ms-border-radius: 10px;
+	-o-border-radius: 10px;
+}
+
+.content-custom {
+	margin: 1rem auto;
+	padding: 2rem;
+	width: 60%;
+	background-color: #fff;
+}
+
+.desc {
+	margin: 0 auto;
+	padding: 0.5rem;
+	position: relative;
+}
+
+.desc a {
+	display: block;
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	margin: 1rem;
+	padding: 0.5rem;
+	background-color: transparent;
+	border: 1px solid #121212;
+	border-radius: 5px;
+	color: #333;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	-ms-border-radius: 5px;
+	-o-border-radius: 5px;
+}
+
+.desc a:hover {
+	color: #eee;
+	background-color: #121212;
+}
+
+.desc span {
+	font-weight: 600;
+}
+
+.desc h3 {
+	padding: 1rem 0;
+	margin: 0 auto;
+	text-align: center;
+	font-weight: 800;
+}
+
+.content .desc table {
+	margin-left: 0;
+	width: auto;
+	text-align: left;
+	table-layout: auto;
+	word-break: break-all;
+}
+
+.content .desc table td {
+	width: auto;
+	background-color: #eee;
+}
+
+.content .desc table tr {
+	border: 3px solid white;
+}
+
+.content .desc table tr:nth-child(odd) {
+	background-color: transparent;
+}
+
+.content table {
+	table-layout: fixed;
+	word-break: break-all;
+	width: 100%;
+	margin: 0 auto;
+	text-align: center;
+	padding: 0.5rem;
+	border-collapse: collapse;
+}
+
+.content table th {
+	padding: 0.5rem;
+	background-color: rgb(223, 223, 223);
+	color: #000000;
+	font-weight: 400;
+}
+
+.content table td {
+	padding: 1rem;
+}
+
+.content table tr {
+	padding: 1rem;
+}
+
+.form-wrap {
+	width: 60%;
+	background-color: #fff;
+	margin: 0 auto;
+	border: 1px solid #eee;
+	border-radius: 10px;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	-ms-border-radius: 10px;
+	-o-border-radius: 10px;
+}
+
+.form-wrap input {
+	width: 100%;
+}
+
+.input-group {
+	margin: 1rem;
+	padding: 0.5em auto;
+}
+
+.input-group input {
+	width: 100%;
+	margin: 1rem auto;
+	padding: 1rem;
+	border: 1px solid #aaa;
+	background: transparent;
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	-ms-border-radius: 5px;
+	-o-border-radius: 5px;
+}
+
+.input-group textarea {
+	width: 100%;
+	margin: 1rem auto;
+	padding: 1rem;
+	border: 1px solid #aaa;
+	border-radius: 5px;
+	background: transparent;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	-ms-border-radius: 5px;
+	-o-border-radius: 5px;
+}
+
+.input-group a {
+	position: absolute;
+	top: 45px;
+	right: -40px;
+	color: #eee;
+	padding: 10px;
+	border-radius: 10px;
+	background-color: red;
+	font-size: 1.2rem;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	-ms-border-radius: 10px;
+	-o-border-radius: 10px;
+}
+
+.input-group p {
+	text-align: center;
+	color: red;
+	text-transform: uppercase;
+}
+
+.button {
+	text-align: center;
+}
+
+.link-below-table {
+	width: 100%;
+	text-align: center;
+	border: none;
+}
+
+.link-below-table a {
+	display: block;
+	padding: 1rem;
+}
+
+.field_wrapper {
+	margin: 1rem auto;
+	padding: 1rem;
+}
+
+.dom-button {
+	text-align: center;
+	margin: 0 auto 3rem;
+}
+
+.dom-button a {
+	margin: 1rem auto;
+	padding: 10px;
+	border: 1px solid #aaa;
+	border-radius: 10px;
+	font-size: 1.1rem;
+	color: #aaa;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	-ms-border-radius: 10px;
+	-o-border-radius: 10px;
+}
+
+.dom-button a:hover {
+	border: 1px solid #fff;
+	color: #fff;
+	background-color: #aaa;
+}
+
+.red {
+	color: white;
+	background-color: red;
+}
+
+.warning {
+	color: white;
+	background-color: rgb(0, 110, 255);
+}
+
+
+.green {
+	color: white;
+	background-color: rgb(100, 100, 100);
+}
+
+.gray {
+	color: white;
+	background-color: rgb(29, 67, 235);
+}
+
+.backs {
+	color: white;
+	background-color: rgb(0, 44, 102);
+}
+
+.link {
+	margin: 10px;
+	padding: 10px;
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	-ms-border-radius: 5px;
+	-o-border-radius: 5px;
+}
+
+.deleteb {
+	color: red;
+	padding: 10px;
+	border-radius: 10px;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	-ms-border-radius: 10px;
+	-o-border-radius: 10px;
+}
+
+.dalam-table {
+	padding: 10px;
+	width: 100px;
+}
+
+.select-dalam-table {
+	padding: 10px;
+}
+
+.penilaian {
+	padding: 10px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+
+.penilaian form {
+	align-items: center;
+	width: 50%;
+}
+
+.penilaian form>* {
+	display: inline-block;
+	margin: 1rem;
+	padding: 1rem;
+}
+
+.penilaian form p {
+	text-transform: uppercase;
+}
+
+.penilaian select {
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	-ms-border-radius: 5px;
+	-o-border-radius: 5px;
+}
+
+.dirlink {
+	padding: 5px 0 5px 15px;
+	margin: 5px 0;
+	border: 1px solid #aaa;
+}
+
+.dirlink a {
+	color: black;
+	transition: 0.5s;
+	-webkit-transition: 0.5s;
+	-moz-transition: 0.5s;
+	-ms-transition: 0.5s;
+	-o-transition: 0.5s;
+}

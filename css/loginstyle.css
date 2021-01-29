@@ -1,0 +1,114 @@
+:root {
+	--color-white: #fff;
+	--color-dark: #222831;
+	--color-grey: #393e46;
+	--color-blue: #00adb5;
+	--color-light: #ddd;
+	--color-debug: #e40202;
+	--color-error: rgb(255, 87, 87);
+	--color-error-text: rgb(175, 0, 0);
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+
+body,
+html {
+	font-size: 15px;
+	font-family: 'Poppins', sans-serif;
+}
+
+img {
+	height: 500px;
+	width: 500px;
+}
+
+input[type="checkbox"] {
+	cursor: pointer;
+}
+
+a,
+button {
+	outline: none;
+	border: none;
+	width: 100%;
+	font-family: inherit;
+	text-decoration: none;
+	color: inherit;
+}
+
+input {
+	color: inherit;
+	font-family: inherit;
+}
+
+a:hover,
+button:hover {
+	opacity: 0.5;
+}
+
+.flex {
+	display: flex;
+}
+
+.flex-center {
+	justify-content: center;
+	align-items: center;
+}
+
+.container {
+	margin: auto;
+	max-width: 1280px;
+}
+
+.content-wrap {
+	min-height: 100vh;
+}
+
+.login-wrap {
+	min-height: 500px;
+	min-width: 300px;
+	text-align: center;
+	margin: 0 3em;
+}
+
+.login-wrap h1 {
+	margin: 1em;
+}
+
+.input-wrap .text-input {
+	width: 100%;
+	padding: 1em;
+	margin: 0.5em auto;
+}
+
+.submit-button {
+	cursor: pointer;
+	padding: 1em 2em;
+	margin: 1em auto;
+	background-color: var(--color-light);
+}
+
+.togglers {
+	margin: 1em auto;
+}
+
+.divider {
+	font-size: 0.9em;
+	color: var(--color-grey);
+}
+
+.link-to {
+	padding: 1em 0;
+	text-align: center;
+}
+
+.error-msg {
+	margin: 1em auto;
+	background-color: var(--color-error);
+	color: var(--color-error-text);
+}
